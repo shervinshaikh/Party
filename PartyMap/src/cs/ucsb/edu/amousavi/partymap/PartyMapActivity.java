@@ -2,9 +2,7 @@ package cs.ucsb.edu.amousavi.partymap;
 
 //import com.google.android.maps.MapView;
 //comment again
-//one more
-//test 3
-//push again
+//alex
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
