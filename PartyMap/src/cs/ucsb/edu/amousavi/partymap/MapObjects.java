@@ -1,5 +1,5 @@
 package cs.ucsb.edu.amousavi.partymap;
-//test
+
 import java.util.ArrayList;
 
 import android.app.AlertDialog;
