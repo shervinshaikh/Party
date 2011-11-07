@@ -59,9 +59,9 @@ public class Party {
 	}
 	
 	public String returnInfo(){
-		String info = "Rating: "+rating;
+		String info = "Rating: "+rating+"\n";
 		for(String comment : comments){
-			info += comment + "\n";
+			info += comment + "\n\n";
 		}
 		
 		return info;

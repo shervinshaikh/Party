@@ -7,6 +7,8 @@ public class GetParties {
 	ArrayList<Party> parties;
 	
 	public GetParties(){
+		parties = new ArrayList<Party>();
+		
 		//int newRating, ArrayList<String> newComments, int [] newCoords, String newTitle
 		ArrayList<String> c1 = new ArrayList<String>();
 		c1.add("this party sucks massive $!@&");
