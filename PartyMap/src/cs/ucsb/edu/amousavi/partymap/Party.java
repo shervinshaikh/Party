@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public class Party {
 
+	String title;
 	
 	ArrayList<String> comments;
 	
@@ -21,12 +22,15 @@ public class Party {
 		//to be added
 	}
 	
-	Party(int newRating, ArrayList<String> newComments, int [] newCoords){
+	Party(int newRating, ArrayList<String> newComments, int [] newCoords, String newTitle){
+		title =newTitle;
 		rating = newRating;
 		comments = newComments;
 		coords = newCoords;
 	}
-	
+	public String getTitle(){
+		return title;
+	}
 	void addMod(PartyModifier mod){
 		
 		int newRating;
@@ -50,6 +54,7 @@ public class Party {
 	int getId(){
 		return partyId;
 	}
+	
 	
 	
 }

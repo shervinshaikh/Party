@@ -7,7 +7,7 @@ public class GetParties {
 	ArrayList<Party> parties;
 	
 	public GetParties(){
-		//fill in stub info
+		Party n
 	}
 	
 	public ArrayList<Party> getParties(){
