@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public class Party {
 
+	
 	String title;
 	
 	ArrayList<String> comments;
@@ -23,14 +24,16 @@ public class Party {
 	}
 	
 	Party(int newRating, ArrayList<String> newComments, int [] newCoords, String newTitle){
-		title =newTitle;
 		rating = newRating;
 		comments = newComments;
 		coords = newCoords;
+		title = newTitle;
 	}
+	
 	public String getTitle(){
 		return title;
 	}
+	
 	void addMod(PartyModifier mod){
 		
 		int newRating;
@@ -55,6 +58,17 @@ public class Party {
 		return partyId;
 	}
 	
+	public String returnInfo(){
+		String info = "Rating: "+rating;
+		for(String comment : comments){
+			info += comment + "\n";
+		}
+		
+		return info;
+	}
 	
+	public int [] getCoords(){
+		return coords;
+	}
 	
 }
