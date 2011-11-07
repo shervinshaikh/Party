@@ -3,5 +3,8 @@
 
     <string name="hello">Hello World, PartyMapActivity!</string>
     <string name="app_name">PartyMap</string>
+    <string name="nodeaddress">node address</string>
+    <string name="noderating">node rating</string>
+    <string name="addrating">Add Rating</string>
 
 </resources>

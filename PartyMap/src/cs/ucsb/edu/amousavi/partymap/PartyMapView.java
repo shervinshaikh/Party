@@ -16,29 +16,43 @@ public class PartyMapView extends MapActivity {
 		return false;
 	}
 
+	MapView mapView;
+	List<Overlay> mapOverlays;
+	Drawable drawable;
+	MapObjects itemizedoverlay;
+	MapController mapController;
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
 	    setContentView(R.layout.map);
-	    MapView mapView = (MapView) findViewById(R.id.mapview);
+	    mapView = (MapView) findViewById(R.id.mapview);
 	    mapView.setBuiltInZoomControls(true);
 	    
-	    List<Overlay> mapOverlays = mapView.getOverlays();
-	    Drawable drawable = this.getResources().getDrawable(android.R.drawable.btn_star);
-	    MapObjects itemizedoverlay = new MapObjects(drawable,this);
+	    mapOverlays = mapView.getOverlays();
+	    drawable = this.getResources().getDrawable(android.R.drawable.btn_star);
+	    itemizedoverlay = new MapObjects(drawable,this);
+	    mapController = mapView.getController();
 	    
+	    //getParties();
+	    setNodes();
 	    
+
+
+	}
+	public void setNodes(){   
 	    //34413725, -119841313 are the coords for csil ( * 10 ^ 6)
 	    GeoPoint point = new GeoPoint(34413725,-119841313);
-	    OverlayItem overlayitem = new OverlayItem(point, "Harold Frank Hall","CSIL");
+	    OverlayItem overlayitem = new OverlayItem(point, "Harold Frank Hall","CSIL \n whatever \n" +
+	    		"another comment \n" +
+	    		"final comment \n");
 	    
 	    itemizedoverlay.addOverlay(overlayitem);
 	    mapOverlays.add(itemizedoverlay);
 	    
-	    MapController mapController = mapView.getController();
+	    
 	    mapController.animateTo(point);
-	    mapController.setZoom(10);
-
+	    mapController.setZoom(15);
 	}
 
 
