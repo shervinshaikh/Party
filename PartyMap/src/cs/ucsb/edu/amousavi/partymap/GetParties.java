@@ -16,6 +16,7 @@ public class GetParties {
 		cd1[0] = 34409587;
 		cd1[1] = -119860279;
 		Party n1 = new Party(3, c1, cd1, "6643 DP");
+		parties.add(n1);
 		
 		ArrayList<String> c2 = new ArrayList<String>();
 		c2.add("f&*k b!tc#es, get money!");
@@ -25,6 +26,7 @@ public class GetParties {
 		cd2[0] = 34409118;
 		cd2[1] = -119856076;
 		Party n2 = new Party(8, c2, cd2, "6549 DP");
+		parties.add(n2);
 		
 		ArrayList<String> c3 = new ArrayList<String>();
 		c3.add("pu$$y everywhere");
@@ -34,6 +36,7 @@ public class GetParties {
 		cd3[0] = 34411351;
 		cd3[1] = -119861175;
 		Party n3 = new Party(6, c3, cd3, "6666 Trigo");
+		parties.add(n3);
 		
 		
 	}
