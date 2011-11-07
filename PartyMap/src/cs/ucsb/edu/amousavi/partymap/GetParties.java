@@ -38,6 +38,36 @@ public class GetParties {
 		Party n3 = new Party(6, c3, cd3, "6666 Trigo");
 		parties.add(n3);
 		
+		ArrayList<String> c4 = new ArrayList<String>();
+		c4.add("Party was raided");
+		c4.add("Skunk sprayed a girls dress");
+		c4.add("Overcrowded!");
+		int[] cd4 = new int[2];
+		cd4[0] = 34411362;
+		cd4[1] = -119861441;
+		Party n4 = new Party(4, c4, cd4, "6670 TRIGO");
+		parties.add(n4);
+
+		ArrayList<String> c5 = new ArrayList<String>();
+		c5.add("Where is the music?>");
+		c5.add("TROLLLLLL");
+		c5.add("no one is here!!");
+		int[] cd5 = new int[2];
+		cd5[0] = 34410441;
+		cd5[1] = -119858367;
+		Party n5 = new Party(0, c5, cd5, "6597 STD");
+		parties.add(n5);
+
+		ArrayList<String> c6 = new ArrayList<String>();
+		c6.add("SO MANYYYYY Females");
+		c6.add("Its poppin");
+		c6.add("Must come!");
+		int[] cd6 = new int[2];
+		cd6[0] = 34409455;
+		cd6[1] = -119856473;
+		Party n6 = new Party(5, c6, cd6, "6555 DP");
+		parties.add(n6);
+		
 		
 	}
 	
