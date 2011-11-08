@@ -3,10 +3,12 @@ package cs.ucsb.edu.amousavi.partymap;
 import java.util.ArrayList;
 import java.util.List;
 
+import android.app.AlertDialog;
 import android.graphics.drawable.Drawable;
 import android.os.*;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 
 
 import com.google.android.maps.*;
@@ -100,5 +102,25 @@ public class PartyMapView extends MapActivity {
 	    return true;
 	}
 
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    // Handle item selection
+	    switch (item.getItemId()) {
+	    case R.id.edit_party_button:
+	    	AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+			dialog.setTitle("CONGRATULATIONS");
+			dialog.setMessage("You pressed the Edit Party");
+			dialog.show();
+	        return true;
+	    case R.id.new_party_button:
+	    	AlertDialog.Builder dialog2 = new AlertDialog.Builder(this);
+			dialog2.setTitle("GOOD JOB BRAH");
+			dialog2.setMessage("You pressed New Party.");
+			dialog2.show();
+	        return true;
+	    default:
+	        return super.onOptionsItemSelected(item);
+	    }
+	}
 
 }
