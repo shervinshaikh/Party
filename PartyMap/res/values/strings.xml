@@ -8,5 +8,7 @@
     <string name="addrating">Add Rating</string>
     <string name="new_party">New Party</string>
     <string name="edit_party">Edit Party</string>
+    <string name="add_comment">Add Comment</string>
+    <string name="submit">Submit</string>
 
 </resources>
