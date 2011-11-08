@@ -49,5 +49,15 @@ public class MapObjects extends ItemizedOverlay {
 		  dialog.show();
 		  return true;
 		}
+	
+	protected boolean onLongPress(int index) {
+		  OverlayItem item = mOverlays.get(index);
+		  AlertDialog.Builder dialog = new AlertDialog.Builder(mContext);
+		  dialog.setTitle(item.getTitle());
+		  dialog.setMessage("you held the button, you winner");
+		  //dialog.setMessage(item.getSnippet());
+		  dialog.show();
+		  return true;
+		}
 
 }

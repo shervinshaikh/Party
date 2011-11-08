@@ -6,5 +6,7 @@
     <string name="nodeaddress">node address</string>
     <string name="noderating">node rating</string>
     <string name="addrating">Add Rating</string>
+    <string name="new_party">New Party</string>
+    <string name="edit_party">Edit Party</string>
 
 </resources>

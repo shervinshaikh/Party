@@ -5,6 +5,8 @@ import java.util.List;
 
 import android.graphics.drawable.Drawable;
 import android.os.*;
+import android.view.Menu;
+import android.view.MenuInflater;
 
 
 import com.google.android.maps.*;
@@ -44,10 +46,8 @@ public class PartyMapView extends MapActivity {
 	    //getPartyStub();
 	    setNodes();
 	    //setTestNode();
-	    
-
-
 	}
+	
 	public void getParties(){
 		GetParties pull = new GetParties();
 		parties = pull.getParties();
@@ -90,9 +90,14 @@ public class PartyMapView extends MapActivity {
 	    
 	    itemizedoverlay.addOverlay(overlayitem);
 	    mapOverlays.add(itemizedoverlay);
-	    
-	    
-	    
+	     
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+	    MenuInflater inflater = getMenuInflater();
+	    inflater.inflate(R.menu.mapmenu, menu);
+	    return true;
 	}
 
 
