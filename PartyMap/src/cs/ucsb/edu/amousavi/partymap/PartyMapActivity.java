@@ -22,15 +22,14 @@ public class PartyMapActivity extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
-        mapButton = (Button)findViewById(R.id.button1);
-        //myLabel = (TextView)findViewById(R.id.TextView01);
-        
+        mapButton = (Button)findViewById(R.id.button1); 
         mapButton.setOnClickListener(this);
     }
 
 	public void onClick(View v) {
 		Intent myIntent = new Intent(this, PartyMapView.class);
-		startActivity(myIntent);// TODO Auto-generated method stub
+		startActivity(myIntent);
+		// TODO Auto-generated method stub
 		
 	}
 }

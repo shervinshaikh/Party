@@ -5,6 +5,14 @@
     android:orientation="vertical" >
 
     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:editable = "true" />
+
+    <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,9 +39,9 @@
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
-
+
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/edit_party_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="top"

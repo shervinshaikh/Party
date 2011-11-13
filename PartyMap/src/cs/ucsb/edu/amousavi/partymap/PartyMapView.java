@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.*;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.Button;
 
 
 import com.google.android.maps.*;
@@ -21,6 +23,7 @@ public class PartyMapView extends MapActivity {
 		return false;
 	}
 
+	Button submitButton;
 	MapView mapView;
 	List<Overlay> mapOverlays;
 	Drawable drawable;
@@ -107,16 +110,27 @@ public class PartyMapView extends MapActivity {
 	    // Handle item selection
 	    switch (item.getItemId()) {
 	    case R.id.edit_party_button:
-	    	AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-			dialog.setTitle("CONGRATULATIONS");
-			dialog.setMessage("You pressed the Edit Party");
-			dialog.show();
+	    	 itemizedoverlay.toggleEdit();
+	    	//setContentView(R.layout.nodeedit);
+	         
+	         //submitButton = (Button)findViewById(R.id.button1);
+	         //myLabel = (TextView)findViewById(R.id.TextView01);
+	         
+	         //submitButton.setOnClickListener(this);
 	        return true;
 	    case R.id.new_party_button:
-	    	AlertDialog.Builder dialog2 = new AlertDialog.Builder(this);
+	    	
+	    	
+	    	
+	    	Intent myIntent = new Intent(this, CreateNew.class);
+			//myIntent.putExtra("coords", coords);
+			this.startActivity(myIntent);
+	    	
+	    	
+	    	/*AlertDialog.Builder dialog2 = new AlertDialog.Builder(this);
 			dialog2.setTitle("GOOD JOB BRAH");
 			dialog2.setMessage("You pressed New Party.");
-			dialog2.show();
+			dialog2.show();*/
 	        return true;
 	    default:
 	        return super.onOptionsItemSelected(item);
