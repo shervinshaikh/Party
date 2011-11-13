@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-
+//welcome
 public class CreateNew extends Activity implements OnClickListener{
     
 	private Context map;

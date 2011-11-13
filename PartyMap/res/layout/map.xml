@@ -6,4 +6,11 @@
     android:layout_height="fill_parent"
     android:clickable="true"
     android:apiKey="0IHw_ZzVDkeU5RzU38OVupZSjCJ3AgCywmy0J9g"
-/>
+    />
+    
+    
+    <!-- this works for the export -->
+    <!-- "0IHw_ZzVDkeXvCAzlQaoJZmznhJIMPZd2rS1n2g"-->
+    <!-- this is the debug key -->
+    <!-- 0IHw_ZzVDkeU5RzU38OVupZSjCJ3AgCywmy0J9g -->
+    
